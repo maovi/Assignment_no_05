@@ -1,0 +1,355 @@
+:root {
+  --main-color:black;
+  --primary-color: #2D2727;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: var(--main-color);
+  color: aliceblue;
+}
+
+
+
+
+
+/* header start */
+header{
+max-width: 80%;
+margin: 0 auto;
+}
+
+
+.header-top{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 10px;
+}
+.title{
+
+}
+.title h2{
+font-size: 2vw;
+position: relative;
+}
+.title h2::after{
+  content: "";
+  width: 100%;
+  height:3px;
+  background-color:aliceblue;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.nav{
+
+}
+.nav ul{
+display: flex;
+list-style: none;
+}
+.nav ul li{
+padding: 0 1.5vw;
+}
+.nav ul li a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1vw;
+}
+.nav ul li a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
+.header-bottom{
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding: 80px 10px;
+}
+
+.left-side{
+max-width: 50%;
+display: flex;
+flex-direction: column;
+}
+.left-p{
+  margin: 5px 0;
+}
+.left-p p{
+font-size: 1.5vw;
+color: turquoise;
+}
+.left-heading{
+  margin: 30px 0;
+}
+.left-heading h1{
+font-size: 6vw;
+letter-spacing: 4px;
+word-spacing: 10px;
+}
+.left-btn{
+display: block;
+margin: 20px 0;
+}
+.left-btn a{
+color: aliceblue;
+text-decoration: none;
+border: 1px solid turquoise;
+font-size: 1.5vw;
+padding: 15px 35px;
+cursor: pointer;
+}
+.left-btn a:hover{
+border: 3px solid coral;
+}
+
+
+.right-side{
+  max-width: 50%;
+}
+.right-side img{
+width: 100%;
+height: 65vh;
+border: 2px solid turquoise;
+border-radius: 10px;
+}
+
+/* header end */
+
+
+
+
+
+/* main start */
+main{
+  max-width: 100%;
+}
+
+
+
+/* concepts section start */
+.concepts{
+  max-width: 80%;
+  margin: 30px auto;
+  display: flex;
+  gap: 2%;
+}
+.concept{
+  flex-basis: 32%;
+  margin: 20px 0;
+  padding: 30px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.concept2{
+  border: 2px solid turquoise;
+}
+.c-icon img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.c-h1{
+  font-size: 1.5vw;
+  margin: 10px;
+}
+.c-p p{
+  font-size: 1vw;
+  margin: 10px;
+  text-align: justify;
+}
+/* concepts section end */
+
+
+
+
+/* services section start */
+.services{
+  max-width: 80%;
+  margin: 70px auto;
+}
+
+
+
+
+.s-heading h1{
+ font-size: 2.5vw;
+ margin: 15px 0;
+}
+.s-heading h1::before{
+  content: "\2014";
+}
+.s-heading p{
+  margin: 15px 0;
+  color: turquoise;
+  font-size: 1vw;
+  word-spacing: 3px;
+}
+
+
+
+
+.s-container{
+  margin: 20px 0;
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+.service{
+  flex-basis: 32%;
+  margin: 20px 0;
+  padding: 30px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border-bottom: 4px solid aliceblue;
+}
+.service2{
+  background-color: turquoise;
+  color: black;
+}
+.service3{
+  border-bottom: 4px solid turquoise;
+}
+.s-icon img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.s-h1 h1{
+  font-size: 1.5vw;
+  margin: 10px;
+}
+.s-p p{
+  font-size: 1vw;
+  margin: 10px;
+  text-align: justify;
+}
+/* services section end */
+
+
+
+
+
+/* works section start */
+.works{
+  max-width: 100%;
+  margin:120px 0;
+}
+
+.works-top{
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-colo);
+}
+.w-left{
+
+}
+.w-left h1{
+  font-size: 2.5vw;
+  margin: 15px 0;
+}
+.w-left h1::before{
+  content: "\2014";
+}
+.w-left p{
+  margin: 15px 0;
+  color: turquoise;
+  font-size: 1vw;
+  word-spacing: 3px;
+}
+.w-right .btn a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.3vw;
+  padding: 18px 38px;
+  border: 2px solid turquoise;
+}
+.w-right .btn a:hover{
+  border: 2px solid coral;
+  cursor: pointer;
+}
+
+
+.works-bottom{
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.img-div{
+  flex-basis: 23%;
+  border: 1px solid turquoise;
+}
+.img-div img{
+  width: 100%;
+  height: 320px;
+}
+/* works section end */
+
+
+
+
+
+/* about section start */
+.about{
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 30px 0;
+  background-color: blue;
+}
+
+.about-heading h1{
+  font-size: 2.5vw;
+  margin: 15px 0;
+}
+.about-heading h1::before{
+  content: "\2014";
+}
+.about-heading p{
+  margin: 15px 0;
+  color: turquoise;
+  font-size: 1vw;
+  word-spacing: 3px;
+}
+
+
+.about-container{
+
+}
+.div1{
+
+}
+.div2{
+
+}
+.div3{
+
+}
+.div4{
+  
+}
+/* about section end */
+
+
+
+
+
+/* main end */
